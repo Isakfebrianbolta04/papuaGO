@@ -1,0 +1,286 @@
+<resources>
+    <string name="app_name">papuaGO</string>
+    <string name="search_your_next_trip_destinations">Search your next trip destinations...</string>
+    <string name="aimas_hotel_coverce"><![CDATA[Aimas Hotel & coverce]]></string>
+
+    <!-- MainActivity -->
+    <string name="mulai">MULAI</string>
+
+    <!-- HomeActivity -->
+    <string name="masuk">MASUK</string>
+    <string name="daftar">DAFTAR</string>
+
+    <!-- LoginActivity -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="email_empty">Email tidak boleh kosong</string>
+    <string name="password_empty">Password tidak boleh kosong</string>
+    <string name="login_success">Login Berhasil</string>
+    <string name="login_failed">Login Gagal: %s</string>
+    <string name="unknown_error">Unknown error</string>
+
+    <!-- BerandaActivity -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="default_user">User</string>
+    <string name="where_to_go">Ayo, mau pergi kemana ?</string>
+    <string name="section_choose_destination">Pilih Tujuan Anda</string>
+    <string name="section_popular_destinations">Destinasi Populer</string>
+    <string name="waisai">Waisai</string>
+    <string name="maybrat">Maybrat</string>
+    <string name="coming_soon">%s - Coming Soon!</string>
+    <string name="order_coming_soon">Fitur Pesanan - Coming Soon!</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_explore">Jelajah</string>
+    <string name="nav_order">Pesanan</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Destinations -->
+    <string name="raja_ampat">Raja Ampat</string>
+    <string name="pulau_yerusel">Pulau Yerusel</string>
+    <string name="pulau_um">Pulau Um</string>
+    <string name="maybrat_tour">Maybrat Tour</string>
+    <string name="kota_sorong">Kota Sorong</string>
+    <string name="danau_uter">Danau Uter</string>
+    <string name="danau_ayamaru">Danau Ayamaru</string>
+    <string name="kali_sembra">Kali Sembra</string>
+    <string name="tambrauw">Tambrauw</string>
+    <string name="sorong_selatan">Sorong Selatan</string>
+    
+    <!-- Profile Activity -->
+    <string name="pref_general">Pengaturan Umum</string>
+    <string name="pref_theme">Mode Tampilan</string>
+    <string name="pref_settings">Pengaturan</string>
+    <string name="pref_language">Bahasa</string>
+
+    <string name="account_manage">Kelola Akun</string>
+    <string name="account_add">Tambah Akun</string>
+    <string name="pref_help">Bantuan dan Dukungan</string>
+    <string name="action_logout">Keluar</string>
+    <string name="menu_favorites">Favorit Saya</string>
+    <string name="title_favorites">Favorit Saya</string>
+    <string name="empty_favorites">Belum ada favorit</string>
+    
+    <string name="theme_dark_active">Mode Gelap Aktif</string>
+    <string name="theme_light_active">Mode Terang Aktif</string>
+    <string name="selected_prefix">Dipilih: </string>
+    <string name="lang_unavailable">Ganti bahasa belum tersedia</string>
+    <string name="lang_indo_active">Bahasa Indonesia aktif</string>
+    <string name="choose_language">Pilih Bahasa</string>
+    <string name="edit_profile_title">Ubah Nama Profil</string>
+    <string name="edit_profile_hint">Nama Lengkap Baru</string>
+    <string name="action_save">Simpan</string>
+    <string name="action_cancel">Batal</string>
+    <string name="profile_name_updated">Nama berhasil diubah</string>
+    <string name="profile_image_updated" translatable="false">Foto profil berhasil diperbarui</string>
+    <string name="logout_success">Berhasil Keluar</string>
+    <string name="feature_coming_soon">Fitur segera hadir</string>
+    <string name="account_active">Akun Sedang Aktif</string>
+    <string name="contact_support">Hubungi kami di support@wisata.com \nSenin-Jumat 09.00-17.00</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="section_general">Umum</string>
+    <string name="setting_notifications">Notifikasi</string>
+    <string name="setting_notifications_desc">Terima info promo menarik</string>
+    <string name="setting_location">Izin Lokasi</string>
+    <string name="setting_location_desc">Rekomendasi wisata terdekat</string>
+    <string name="section_account">Akun &amp; Keamanan</string>
+    <string name="setting_change_password">Ubah Kata Sandi</string>
+    <string name="setting_privacy">Privasi &amp; Data</string>
+    <string name="section_about">Tentang</string>
+    <string name="setting_about_app">Tentang Aplikasi</string>
+    <string name="setting_clear_cache">Hapus Cache</string>
+    <string name="setting_version">Versi 1.0.0</string>
+    <string name="cache_cleared">Cache berhasil dihapus</string>
+    
+    <!-- Settings Dialogs -->
+    <string name="dialog_password_title">Ubah Kata Sandi</string>
+    <string name="hint_new_password">Kata Sandi Baru</string>
+    <string name="hint_confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="error_password_check">Login ulang diperlukan untuk alasan keamanan.</string>
+    <string name="error_password_mismatch">Kata sandi tidak cocok</string>
+    <string name="error_password_short">Kata sandi minimal 6 karakter</string>
+    <string name="success_password_changed">Kata sandi berhasil diubah</string>
+    
+    <string name="dialog_privacy_title">Kebijakan Privasi</string>
+    <string name="privacy_content">1. Pengumpulan Data: Kami mengumpulkan data dasar seperti nama dan email untuk layanan akun.\n\n2. Keamanan: Data Anda dilindungi dengan enkripsi standar industri.\n\n3. Penggunaan Lokasi: Izin lokasi hanya digunakan untuk rekomendasi wisata terdekat.\n\n4. Pihak Ketiga: Kami tidak menjual data pribadi Anda kepada pihak ketiga.</string>
+    
+    <string name="dialog_about_title">Tentang PapuaGO</string>
+    <string name="about_content">PapuaGO hadir sebagai panduan utama bagi wisatawan untuk menjelajahi keajaiban di provinsi termuda Indonesia, Papua Barat Daya. Fokus kami adalah mempermudah akses informasi menuju destinasi kelas dunia seperti Raja Ampat, serta memperkenalkan pesona tersembunyi di Sorong, Tambrauw, hingga Maybrat. Dengan desain premium dan navigasi yang intuitif, PapuaGO memastikan petualangan Anda di Bumi Cendrawasih dimulai dengan kemudahan teknologi. \n\nVersi Aplikasi: 1.0.0\nTim Pengembang: SAGU Team\nCopyright © 2026</string>
+    <string name="action_close">Tutup</string>
+
+    <!-- Search Activity -->
+    <string name="search_hint">Cari...</string>
+    <string name="cat_wisata">Tempat Wisata</string>
+    <string name="cat_hotel">Penginapan</string>
+    <string name="cat_aksesoris">Aksesoris</string>
+    <string name="cat_food">Makanan</string>
+    <string name="section_offers">Penawaran &amp; Promosi</string>
+    <string name="section_accessories_collection">Koleksi Aksesoris khas Papua Barat Daya</string>
+    <string name="section_hotel_choice">Penginapan &amp; Hotel Pilihan</string>
+    <string name="section_delicious_food">Kuliner Lezat</string>
+
+    <!-- Order Activity -->
+    <string name="title_order_history">Riwayat Pesanan</string>
+    <string name="empty_order_list">Belum ada pesanan</string>
+    <string name="label_total_payment">Total Pembayaran</string>
+    <string name="btn_pay_all">Bayar Semua</string>
+    <string name="status_pending">Menunggu Pembayaran</string>
+    <string name="status_paid">Lunas</string>
+    <string name="action_pay_count">Bayar (%d)</string>
+    <!-- Static Data Titles (Search Activity) -->
+    <string name="title_raja_ampat">Raja Ampat (Waisai)</string>
+    <string name="title_ayamaru">Danau Ayamaru</string>
+    <string name="title_sorsel">Sorong Selatan</string>
+    <string name="title_um">Pulau Um</string>
+    <string name="title_tambrauw">Tambrauw</string>
+    <string name="title_yerusel">Pulau Yerusel</string>
+    <string name="title_uter">Danau Uter</string>
+    <string name="title_sembra">Kali Sembra</string>
+    <string name="title_maybrat">Maybrat</string>
+    <string name="title_sorong">Kota Sorong</string>
+
+    <string name="title_nusa">Hotel Nusa Indah</string>
+    <string name="title_maratuwa">Hotel Maratuwa</string>
+    <string name="title_piaynemo">Piaynemo Homestay</string>
+    <string name="title_alfira">Hotel Alfira</string>
+    <string name="title_acc">Hotel ACC Aimas</string>
+
+    <string name="title_noken">Noken Wamena</string>
+    <string name="title_noken_kayu">Noken Kulit Kayu</string>
+    <string name="title_noken_ra">Noken Raja Ampat</string>
+    <string name="title_akar_bahar">Gelang Akar Bahar</string>
+    <string name="title_kalung">Kalung Kulit Kerang</string>
+    <string name="title_tifa">Tifa Sorong</string>
+    <string name="title_batik">Batik Sorong</string>
+    <string name="title_anyaman">Tas Anyaman PBD</string>
+    <string name="title_pakaian">Pakaian Adat PBD</string>
+    <string name="title_mahkota">Mahkota Cendrawasih</string>
+
+    <string name="title_papeda">Papeda Kuah Kuning</string>
+    <string name="title_keladi">Keladi Bakar</string>
+    <string name="title_nasgor">Nasi Goreng Papua</string>
+
+    <!-- Durations -->
+    <string name="dur_4d3n">4 Hari 3 Malam</string>
+    <string name="dur_1day">1 Hari</string>
+    <string name="dur_2d1n">2 Hari 1 Malam</string>
+    <string name="dur_3d2n">3 Hari 2 Malam</string>
+    <string name="dur_4h">4 Jam</string>
+    <string name="dur_3h">3 Jam</string>
+    <string name="dur_2h">2 Jam</string>
+    <string name="dur_5h">5 Jam</string>
+    <string name="dur_per_night">Per Malam</string>
+    <string name="dur_portion">Porsi</string>
+    <string name="dur_pcs">Buah</string>
+    <string name="dur_meter">Meter</string>
+    <string name="dur_set">Set</string>
+
+    <!-- Transportation -->
+    <string name="trans_plane_boat">Pesawat &amp; Kapal Cepat</string>
+    <string name="trans_car_motor">Mobil / Motor</string>
+    <string name="trans_travel_car">Mobil Travel</string>
+    <string name="trans_ferry_speedboat">Kapal Feri &amp; Speedboat</string>
+    <string name="trans_boat">Perahu Nelayan</string>
+    <string name="trans_4x4">Mobil 4x4</string>
+    <string name="trans_offroad">Mobil Offroad</string>
+    <string name="trans_speedboat">Speedboat</string>
+    <string name="trans_taxi">Mobil / Taksi</string>
+    <string name="trans_public">Angkutan Kota &amp; Ojek</string>
+    <string name="trans_landrover">Mobil Land Rover</string>
+
+    <!-- Descriptions -->
+    <string name="desc_raja_ampat">Kepulauan dengan pemandangan bawah laut yang menakjubkan dan gugusan pulau karang.</string>
+    <string name="desc_ayamaru">Danau bersejarah dengan air yang bisa berubah warna. Dikelilingi hutan yang asri.</string>
+    <string name="desc_uter">Danau bening bak kristal di tengah hutan. Airnya sangat jernih hingga dasar danau terlihat jelas.</string>
+    <string name="desc_sorsel">Keindahan alam Sorong Selatan dengan sungai-sungai jernih dan hutan tropis asri.</string>
+    <string name="desc_um">Pulau habitat ribuan kelelawar dan burung camar. Pasir putih dan air jernih.</string>
+    <string name="desc_tambrauw">Kabupaten Konservasi dengan hutan hujan luas. Favorit untuk bird watching.</string>
+    <string name="desc_yerusel">Pulau dengan gradasi biru laut yang memukau dan pasir putih halus. Tenang untuk bersantai.</string>
+    <string name="desc_sembra">Sungai dengan air berwarna biru toska yang mengalir tenang. Tempat favorit berendam.</string>
+    <string name="desc_maybrat">Jelajahi keajaiban Danau Ayamaru dan Danau Uter. Surga tersembunyi Maybrat.</string>
+    <string name="desc_sorong">Pusat ekonomi dan gerbang utama Papua Barat Daya. Jelajahi kearifan lokal.</string>
+    <string name="desc_nusa">Hotel nyaman dengan fasilitas lengkap di pusat Sorong Selatan.</string>
+    <string name="desc_maratuwa">Akomodasi tenang dengan pelayanan terbaik untuk istirahat Anda.</string>
+    <string name="desc_piaynemo">Penginapan di atas air dengan view pulau karang Raja Ampat yang ikonik.</string>
+    <string name="desc_alfira">Akomodasi nyaman dan strategis untuk perjalanan Anda di Maybrat.</string>
+    <string name="desc_acc">Penginapan dengan fasilitas lengkap di pusat kota Aimas.</string>
+    <string name="desc_noken">Tas tradisional rajutan tangan khas mama-mama Papua.</string>
+    <string name="desc_noken_kayu">Noken eksklusif dari serat kulit kayu pilihan asli Papua.</string>
+    <string name="desc_noken_ra">Tas rajut khas pengrajin lokal Raja Ampat yang autentik.</string>
+    <string name="desc_akar_bahar">Gelang kesehatan dari akar laut hitam asli perairan Sorong.</string>
+    <string name="desc_kalung">Kalung hiasan cantik dari berbagai kerang eksotis Raja Ampat.</string>
+    <string name="desc_tifa">Alat musik tradisional dengan ukiran khas suku pesisir Sorong.</string>
+    <string name="desc_batik">Kain batik dengan motif Burung Cendrawasih khas Sorong.</string>
+    <string name="desc_anyaman">Tas ramah lingkungan hasil anyaman pengrajin Sorong Selatan.</string>
+    <string name="desc_pakaian">Busana tradisional lengkap untuk upacara adat di Papua Barat Daya.</string>
+    <string name="desc_mahkota">Hiasan kepala mewah dari bulu burung Cendrawasih khas Papua.</string>
+    <string name="desc_papeda">Sagu disajikan dengan ikan kuah kuning yang segar dan lezat.</string>
+    <string name="desc_keladi">Keladi yang dibakar dengan bumbu tradisional hingga harum.</string>
+    <string name="desc_nasgor_papua">Nasi goreng spesial dengan rempah lokal khas Papua.</string>
+    <string name="title_ikan_bakar">Ikan Bakar Manokwari</string>
+    <string name="title_udang_selingkuh">Udang Selingkuh</string>
+    <string name="title_keripik_keladi">Keripik Keladi Sorong</string>
+    <string name="title_sagu_lempeng">Sagu Lempeng</string>
+    <string name="title_ikan_bungkus">Ikan Bungkus</string>
+    <string name="desc_ikan_bakar">Ikan bakar bumbu pedas khas Manokwari yang menggoda selera.</string>
+    <string name="desc_udang_selingkuh">Udang air tawar Wamena yang dagingnya manis dan gurih.</string>
+    <string name="desc_keripik_keladi">Oleh-oleh keripik keladi renyah khas dari Kota Sorong.</string>
+    <string name="desc_sagu_lempeng">Kue sagu batangan tradisional yang gurih dan mengenyangkan.</string>
+    <string name="desc_ikan_bungkus">Ikan bumbu rempah yang dikukus dalam bungkusan daun pisang.</string>
+
+    <string name="dur_pack">Bungkus</string>
+    
+    <!-- Order Dialogs & Toasts -->
+    <string name="dialog_delete_title">Hapus Riwayat</string>
+    <string name="dialog_delete_message">Apakah Anda yakin ingin menghapus riwayat pesanan ini? Data yang dihapus tidak dapat dikembalikan.</string>
+    <string name="action_delete">Hapus</string>
+    <string name="toast_order_deleted">Riwayat pesanan dihapus.</string>
+    <string name="error_delete_failed">Gagal menghapus: %s</string>
+    <string name="label_payment_method">Metode Pembayaran:</string>
+
+    <!-- Auth Extras -->
+    <string name="error_admin_secret">Kode Secret Admin Salah!</string>
+    <string name="toast_admin_upgrade">Berhasil Upgrade &amp; Masuk sebagai Admin!</string>
+    <string name="hint_email_reset">Email Anda</string>
+    <string name="dialog_reset_pwd_title">Reset Kata Sandi</string>
+    <string name="dialog_reset_pwd_message">Masukkan email untuk menerima link reset password.</string>
+    <string name="action_send">Kirim</string>
+    <string name="dialog_email_sent_title">Email Terkirim</string>
+    <string name="dialog_email_sent_message">Link reset kata sandi telah dikirim ke %s.\n\nSilakan cek inbox atau folder SPAM email Anda.</string>
+    <string name="error_send_email_failed">Gagal mengirim email: %s</string>
+    <string name="error_email_required">Email harus diisi.</string>
+    <string name="toast_welcome">Selamat Datang %s!</string>
+    <string name="toast_photo_selected">Foto berhasil dipilih!</string>
+    <string name="error_all_fields_required">Semua field wajib diisi!</string>
+    <string name="toast_register_success">Akun berhasil dibuat!</string>
+    <string name="error_save_data_failed">Gagal simpan data: %s</string>
+    <string name="error_register_failed">Pendaftaran Gagal: %s</string>
+
+    <!-- Detail Template Strings -->
+    <string name="label_summary">Ringkasan</string>
+    <string name="label_duration_prefix">Durasi </string>
+    <string name="label_rating_prefix">Rating </string>
+    <string name="btn_order_now">Pesan Sekarang</string>
+    <string name="price_per_boat">%s / speedboat</string>
+
+    <!-- Detail Activity Strings -->
+    <string name="action_book_ticket">Pesan Tiket Wisata</string>
+    <string name="action_book_room">Booking Kamar</string>
+    <string name="action_order_menu">Pesan Menu</string>
+    <string name="action_buy_now">Beli Sekarang</string>
+    <string name="dialog_confirm_order_title">Konfirmasi Pemesanan</string>
+    <string name="dialog_confirm_order_message">Apakah Anda yakin ingin melakukan %s ini?</string>
+    <string name="action_yes_order">Ya, Pesan</string>
+    <string name="toast_login_required">Silakan login terlebih dahulu</string>
+    <string name="toast_fav_added">Ditambahkan ke Favorit</string>
+    <string name="toast_fav_removed">Dihapus dari Favorit</string>
+    <string name="status_processing">Memproses...</string>
+    <string name="toast_order_success">Pemesanan berhasil!</string>
+    <string name="status_already_ordered">Sudah Dipesan</string>
+    <string name="error_order_failed">Gagal memesan: %s</string>
+    <string name="error_data_not_found">Data wisata tidak ditemukan</string>
+</resources>

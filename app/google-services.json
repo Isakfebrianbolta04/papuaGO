@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "559188184698",
+    "firebase_url": "https://papuago-f10f5-default-rtdb.firebaseio.com",
+    "project_id": "papuago-f10f5",
+    "storage_bucket": "papuago-f10f5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559188184698:android:789090d3e634d6232df5c3",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD82VsolR21a7PpX_QSoXVcXer56xPZy9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

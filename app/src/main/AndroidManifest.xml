@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".InputWisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailWisataActivity"
+            android:exported="false" />
+        <!-- Activity pertama (halaman awal aplikasi) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Authentication Activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" /> <!-- Main Navigation Activities -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BerandaActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" /> <!-- Detail Activities -->
+        <activity
+            android:name=".DetailRajaAmpatActivity"
+            android:exported="false"
+            android:parentActivityName=".BerandaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BerandaActivity" />
+        </activity>
+        <activity
+            android:name=".DetailPulauYeruselActivity"
+            android:exported="false"
+            android:parentActivityName=".BerandaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BerandaActivity" />
+        </activity>
+        <activity
+            android:name=".DetailHotelNusaIndahActivity"
+            android:exported="false"
+            android:parentActivityName=".BerandaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BerandaActivity" />
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPaymentSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminContactSettingsActivity"
+            android:exported="false" />
+        
+        <!-- Payment System Activities -->
+        <activity
+            android:name=".PaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRTicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VoucherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatusActivity"
+            android:exported="false" />
+            
+        <!-- Admin System Activities -->
+        <activity
+            android:name=".AdminInputDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminWisataScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHotelDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminKulinerDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAksesorisDetailActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

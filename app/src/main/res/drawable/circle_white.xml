@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <size
+        android:width="120dp"
+        android:height="120dp" />
+
+    <solid android:color="@color/bg_card" />
+
+    <stroke
+        android:width="2dp"
+        android:color="#DDDDDD" />
+
+    <padding
+        android:top="8dp"
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp" />
+
+</shape>

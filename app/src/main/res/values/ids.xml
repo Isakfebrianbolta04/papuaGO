@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="card1" type="id" />
+    <item name="card2" type="id" />
+    <item name="textView2" type="id" />
+    <item name="txtName" type="id" />
+    <item name="txtEmail" type="id" />
+    <item name="cardMenu" type="id" />
+    <item name="navProfileIcon" type="id" />
+    <item name="navProfileText" type="id" />
+    <item name="navHomeIcon" type="id" />
+    <item name="navHomeText" type="id" />
+    <item name="navExploreIcon" type="id" />
+    <item name="navExploreText" type="id" />
+    <item name="navOrderIcon" type="id" />
+    <item name="navOrderText" type="id" />
+    <item name="Hotel" type="id" />
+    <item name="navSearch" type="id" />
+    <item name="categoryHotels" type="id" />
+    <item name="categoryAccessories" type="id" />
+    <item name="categoryFood" type="id" />
+    <item name="categoryDestination" type="id" />
+    <item name="txtSearchResult" type="id" />
+    <item name="hotelImage" type="id" />
+    <item name="hotelName" type="id" />
+    <item name="bookButton" type="id" />
+    <item name="hotelPrice" type="id" />
+    <item name="roomInfo" type="id" />
+    <item name="roomNumber" type="id" />
+    <item name="roomType" type="id" />
+    <item name="roomPrice" type="id" />
+    <item name="totalPrice" type="id" />
+    <item name="userName" type="id" />
+    <item name="userEmail" type="id" />
+    <item name="userPhone" type="id" />
+    <item name="txtRingkasan" type="id" />
+    <item name="txtDurasi" type="id" />
+    <item name="txtRating" type="id" />
+    <item name="txtDeskripsi" type="id" />
+    <item name="cardYerusel" type="id" />
+    <item name="menuImage2" type="id" />
+    <item name="btnWhatsappContainer" type="id" />
+    <item name="btnPhoneContainer" type="id" />
+    <item name="recyclerResults" type="id" />
+    <item name="emptyState" type="id" />
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kategori_wisata">
+        <item>Pilih Kategori</item>
+        <item>Tempat Wisata</item>
+        <item>Penginapan</item>
+        <item>Aksesoris</item>
+        <item>Makanan</item>
+    </string-array>
+
+    <string-array name="pilihan_gambar">
+        <item>Pilih Gambar</item>
+        <item>raja4</item>
+        <item>yerusel</item>
+        <item>um</item>
+        <item>maybrat</item>
+        <item>sorong</item>
+        <item>sorsel</item>
+        <item>raja41</item>
+        <item>tambrauw</item>
+        <item>sembra</item>
+        <item>ayamaru</item>
+        <item>uter</item>
+        <item>keladi_asli</item>
+        <item>papeda_baru</item>
+        <item>nasgor_baru</item>
+        <item>ikan_bakar</item>
+        <item>udang_selingkuh</item>
+        <item>keripik_keladi</item>
+        <item>sagu_lempeng</item>
+        <item>ikan_bungkus</item>
+        <item>tas_kulit_kayu</item>
+        <item>um</item>
+        <item>uter</item>
+    </string-array>
+</resources>

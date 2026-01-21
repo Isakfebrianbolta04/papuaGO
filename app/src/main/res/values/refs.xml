@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_star" />
+    <drawable name="ic_clock" />
+    <drawable name="circle_green" />
+    <drawable name="gradient_header" />
+</resources>

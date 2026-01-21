@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Glass white transparent -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80FFFFFF"/> <!-- semi transparan -->
+            <corners android:radius="22dp"/>
+        </shape>
+    </item>
+
+    <!-- Soft top shadow -->
+    <item android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#40000000"
+                android:endColor="@android:color/transparent"/>
+            <corners android:radius="22dp"/>
+        </shape>
+    </item>
+
+</layer-list>

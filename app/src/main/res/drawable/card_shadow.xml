@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shadow gelap -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000"/>
+            <corners android:radius="22dp"/>
+        </shape>
+    </item>
+
+    <!-- Card utama -->
+    <item android:top="6dp" android:left="6dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#D7D7D7"/>
+            <corners android:radius="22dp"/>
+        </shape>
+    </item>
+</layer-list>

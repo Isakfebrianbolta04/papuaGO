@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Semantic Colors (Day) -->
+    <color name="bg_screen">#F5F5F5</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_tertiary">#999999</color>
+    <color name="divider">#F0F0F0</color>
+    <color name="icon_tint">#000000</color>
+    <color name="icon_tint_secondary">#999999</color>
+    
+    <color name="logout_red">#F44336</color>
+    <color name="admin_green">#4CAF50</color>
+    <color name="help_purple">#9C27B0</color>
+    
+    <color name="brand_brown">#8A5A3A</color>
+    <color name="nav_active_bright">#FFC107</color> <!-- Bright Amber for Active state -->
+    
+    <color name="nav_bg">#80FFFFFF</color>
+    
+    <color name="cardBackgroundColor">@color/bg_card</color>
+    <color name="colorPrimary">@color/white</color>
+</resources>

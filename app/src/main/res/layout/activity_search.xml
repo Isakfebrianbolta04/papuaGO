@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <!-- ======================= MAIN SCROLL CONTENT ======================= -->
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ================= SEARCH BAR ================= -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/searchWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/brand_brown"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <ImageView
+                        android:id="@+id/iconSearch"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/icon_pencarian"
+                        app:tint="#FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/searchInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/iconSearch"
+                        android:layout_toStartOf="@id/filterButton"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/search_hint"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp"
+                        android:padding="0dp" />
+
+                    <ImageView
+                        android:id="@+id/filterButton"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="7dp"
+                        android:src="@drawable/filter"
+                        app:tint="#FFFFFF" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- =============== MENU ICON (4 BUTTON) =============== -->
+            <LinearLayout
+                android:id="@+id/menuContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- ITEM 1 - Tempat Wisata -->
+                <LinearLayout
+                    android:id="@+id/btnTempatWisata"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle_brown"
+                        android:padding="14dp"
+                        android:src="@drawable/icon_lokasi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/cat_wisata"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- ITEM 2 - Penginapan -->
+                <LinearLayout
+                    android:id="@+id/btnPenginapan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle_brown"
+                        android:padding="14dp"
+                        android:src="@drawable/icon_hotel1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/cat_hotel"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- ITEM 3 - Aksesoris -->
+                <LinearLayout
+                    android:id="@+id/btnAksesoris"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle_brown"
+                        android:padding="14dp"
+                        android:src="@drawable/shoping_bag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/cat_aksesoris"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- ITEM 4 - Makanan -->
+                <LinearLayout
+                    android:id="@+id/btnMakanan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle_brown"
+                        android:padding="14dp"
+                        android:src="@drawable/icon_makanan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/cat_food"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- TITLE: Penawaran & Promosi -->
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/section_offers"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- HORIZONTAL SCROLL PENAWARAN & PROMOSI -->
+            <HorizontalScrollView
+                android:id="@+id/scrollMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- CARD 1 - Maybrat Tour -->
+                    <include
+                        android:id="@+id/cardMaybratTour"
+                        layout="@layout/item_static_card" />
+
+                    <!-- CARD 2 - Sorong Tour -->
+                    <include layout="@layout/item_static_card" android:id="@+id/cardSorongTour"/>
+
+                    <!-- CARD 3 - Sorong Selatan Tour -->
+                    <include layout="@layout/item_static_card" android:id="@+id/cardSorselTour"/>
+
+                    <!-- CARD 4 - Raja Ampat Tour -->
+                    <include layout="@layout/item_static_card" android:id="@+id/cardRajaAmpatTour"/>
+
+                    <!-- CARD 5 - Tambrauw Tour -->
+                    <include
+                        android:id="@+id/cardTambrauwTour"
+                        layout="@layout/item_static_card" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- TITLE: Koleksi Aksesoris -->
+            <TextView
+                android:id="@+id/tvTitleAksesoris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/section_accessories_collection"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- HORIZONTAL SCROLL AKSESORIS -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/llAksesorisContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Dynamic Items will be added here or hardcoded cards will be updated -->
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris1"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris2"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris3"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris4"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris5"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris6"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris7"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris8"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris9"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardAksesoris10"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- TITLE: Penginapan & Hotel -->
+            <TextView
+                android:id="@+id/tvTitleHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/section_hotel_choice"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/llHotelContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/item_static_card" android:id="@+id/cardHotel1"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardHotel2"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardHotel3"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardHotel4"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardHotel5"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- TITLE: Kuliner Lezat -->
+            <TextView
+                android:id="@+id/tvTitleMakanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/section_delicious_food"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/llMakananContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan1"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan2"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan3"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan4"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan5"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan6"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan7"/>
+                    <include layout="@layout/item_static_card" android:id="@+id/cardMakanan8"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Spacing sebelum Bottom Nav -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ======================= BOTTOM NAVIGATION ======================= -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_nav"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- HOME -->
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iconHome"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/vector"
+                    android:layout_gravity="center"
+                    app:tint="@color/brand_brown" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/nav_home"
+                android:textColor="@color/brand_brown"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- EXPLORE -->
+        <LinearLayout
+            android:id="@+id/navExplore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iconExplore"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/search"
+                    android:layout_gravity="center"
+                    app:tint="@color/brand_brown" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtExplore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/nav_explore"
+                android:textColor="@color/brand_brown"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- ORDER -->
+        <LinearLayout
+            android:id="@+id/navOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iconOrder"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/pesanan"
+                    android:layout_gravity="center"
+                    app:tint="@color/brand_brown" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/nav_order"
+                android:textColor="@color/brand_brown"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- PROFILE -->
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iconProfile"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_person"
+                    android:layout_gravity="center"
+                    app:tint="@color/brand_brown" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/nav_profile"
+                android:textColor="@color/brand_brown"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

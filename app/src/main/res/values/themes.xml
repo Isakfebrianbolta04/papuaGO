@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/white</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/white</item>
+        <!-- Optional: Change status bar icon colors for light content -->
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Optional: Change navigation bar icon colors for light content -->
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+
+        <!-- Android 12+ Splash Screen -->
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/ic_splash_logo</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/white</item>
+    </style>
+
+<!--    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />-->
+</resources>
