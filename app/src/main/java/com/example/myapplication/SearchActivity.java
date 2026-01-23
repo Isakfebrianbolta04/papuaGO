@@ -403,10 +403,30 @@ public class SearchActivity extends AppCompatActivity {
                 if (btnTempatWisata != null)
                         btnTempatWisata.setOnClickListener(v -> {
                                 Intent intent = new Intent(this, ResultSearchActivity.class);
-                                intent.putExtra("category", "Wisata");
+                                intent.putExtra("category", "Tempat Wisata");
                                 startActivity(intent);
                         });
-                // Add others if needed
+
+                if (btnPenginapan != null)
+                        btnPenginapan.setOnClickListener(v -> {
+                                Intent intent = new Intent(this, ResultSearchActivity.class);
+                                intent.putExtra("category", "Penginapan");
+                                startActivity(intent);
+                        });
+
+                if (btnAksesoris != null)
+                        btnAksesoris.setOnClickListener(v -> {
+                                Intent intent = new Intent(this, ResultSearchActivity.class);
+                                intent.putExtra("category", "Aksesoris");
+                                startActivity(intent);
+                        });
+
+                if (btnMakanan != null)
+                        btnMakanan.setOnClickListener(v -> {
+                                Intent intent = new Intent(this, ResultSearchActivity.class);
+                                intent.putExtra("category", "Makanan");
+                                startActivity(intent);
+                        });
         }
 
         private void selectNavItem(LinearLayout nav) {
